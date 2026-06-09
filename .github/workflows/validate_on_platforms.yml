@@ -11,9 +11,9 @@ jobs:
       name: Validate Getting Started works on macOS
       runs-on: macos-latest
       steps:
-        - uses: actions/checkout@v3
+        - uses: actions/checkout@v5
         - name: Set up Python
-          uses: actions/setup-python@v4
+          uses: actions/setup-python@v6
         - name: Install uv
           uses: astral-sh/setup-uv@v5
         - name: Full Deploy Commands
@@ -32,9 +32,9 @@ jobs:
       name: Validate Getting Started works on linux
       runs-on: ubuntu-latest
       steps:
-        - uses: actions/checkout@v3
+        - uses: actions/checkout@v5
         - name: Set up Python
-          uses: actions/setup-python@v4
+          uses: actions/setup-python@v6
         - name: Install uv
           uses: astral-sh/setup-uv@v5
         - name: Full Deploy Commands
@@ -53,9 +53,9 @@ jobs:
       name: Validate Getting Started works on Linux PowerShell Core
       runs-on: ubuntu-latest
       steps:
-        - uses: actions/checkout@v3
+        - uses: actions/checkout@v5
         - name: Set up Python
-          uses: actions/setup-python@v4
+          uses: actions/setup-python@v6
         - name: Install uv
           uses: astral-sh/setup-uv@v5
         - name: Full Deploy Commands
@@ -72,9 +72,9 @@ jobs:
       name: Validate Getting Started works on Windows PowerShell
       runs-on: windows-latest
       steps:
-        - uses: actions/checkout@v3
+        - uses: actions/checkout@v5
         - name: Set up Python
-          uses: actions/setup-python@v4
+          uses: actions/setup-python@v6
         - name: Install uv
           uses: astral-sh/setup-uv@v5
         - name: Full Deploy Commands
@@ -91,9 +91,9 @@ jobs:
       name: Validate Getting Started works on Windows cmd.exe
       runs-on: windows-latest
       steps:
-        - uses: actions/checkout@v3
+        - uses: actions/checkout@v5
         - name: Set up Python
-          uses: actions/setup-python@v4
+          uses: actions/setup-python@v6
         - name: Install uv
           uses: astral-sh/setup-uv@v5
         - name: Full Deploy Commands

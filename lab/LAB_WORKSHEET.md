@@ -9,12 +9,12 @@ Follow these steps with your pair partner. Checkpoints (✅) tell you when you'v
 ## Setup (done together as a room)
 
 ```bash
-# Install Python with Homebrew (skip if you already have Python 3.9+)
-brew install python
+# Install Python 3.12 with Homebrew (dbt does not yet support Python 3.13+)
+brew install python@3.12
 
 # Clone the lab repo (your facilitator will share the URL), then:
 cd se-book-club-lab
-python3 -m venv venv
+python3.12 -m venv venv
 source venv/bin/activate
 pip install -r requirements.txt
 dbt --version

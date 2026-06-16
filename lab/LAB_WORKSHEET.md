@@ -66,11 +66,29 @@ Create a feature branch:
 git checkout -b add-customer-region
 ```
 
-Open `models/customers.sql`. This model rolls up customer-level metrics. Your task: **add a new column** that the business has asked for. Pick one:
+Open `models/customers.sql` in a text editor:
 
-- A `customer_status` column that labels customers as `'active'` vs `'one-time'` based on number of orders
-- A `first_order_year` column extracted from `first_order`
-- Any small, defensible addition you can explain
+```bash
+open -a "Visual Studio Code" models/customers.sql   # VS Code (Mac)
+# or just double-click the file in Finder
+```
+
+This model rolls up customer-level metrics. Your task: **add a new column** to the `final` CTE, just before the closing parenthesis. Copy and paste one of these:
+
+**Option A — customer_status**
+```sql
+        case
+            when customer_orders.number_of_orders > 1 then 'active'
+            else 'one-time'
+        end as customer_status
+```
+
+**Option B — first_order_year**
+```sql
+        extract(year from customer_orders.first_order) as first_order_year
+```
+
+Add a comma after the line above your addition (`customer_lifetime_value`) so the SQL is valid.
 
 Make the edit, then rebuild just this model to confirm it works:
 

@@ -10,7 +10,7 @@ This lab is part of the **CLI & Developer Fundamentals SE Book Club**. It's the 
 
 ## Why this matters for an SE at Sigma
 
-Sigma's CLI, API actions, and the agent/MCP motion are pulling us into conversations with a new kind of buyer: data engineers and platform leads. They don't live in dashboards — they live in terminals, commit to repos, and review pull requests. They evaluate tools by whether they fit a modern software-development workflow.
+Sigma's CLI, API actions, and the agent/MCP motion are pulling us into conversations with a new kind of buyer: data engineers and platform leads. They don't live in dashboards; they live in terminals, commit to repos, and review pull requests. They evaluate tools by whether they fit a modern software-development workflow.
 
 We're strong on BI. This is a different muscle. When a prospect's data engineer says *"we version-control our models"* or *"we need this to run in our CI pipeline,"* you need to know exactly what they mean and respond without hand-waving.
 

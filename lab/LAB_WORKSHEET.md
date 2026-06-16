@@ -8,11 +8,18 @@ Follow these steps with your pair partner. Checkpoints (✅) tell you when you'v
 
 ## Setup (done together as a room)
 
+**Step 1 — Fork the repo**
+
+Go to the lab repo URL (your facilitator will share it) and click **Fork** in the top-right corner of GitHub. This creates your own personal copy to work in — everyone needs their own fork.
+
+**Step 2 — Clone your fork and set up the environment**
+
 ```bash
 # Install Python 3.12 with Homebrew (dbt does not yet support Python 3.13+)
 brew install python@3.12
 
-# Clone the lab repo (your facilitator will share the URL), then:
+# Clone YOUR fork (replace <your-username> with your GitHub username)
+git clone https://github.com/<your-username>/se-book-club-lab.git
 cd se-book-club-lab
 python3.12 -m venv venv
 source venv/bin/activate

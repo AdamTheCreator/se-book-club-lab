@@ -73,7 +73,10 @@ open -a "Visual Studio Code" models/customers.sql   # VS Code (Mac)
 # or just double-click the file in Finder
 ```
 
-This model rolls up customer-level metrics. Your task: **add a new column** to the `final` CTE, just before the closing parenthesis. Copy and paste one of these:
+This model rolls up customer-level metrics. Your task: **add a new column** to the `final` CTE, just before the closing parenthesis. Remember to add a comma after the line above your addition (`customer_lifetime_value`) so the SQL is valid.
+
+<details>
+<summary>💡 Need a hint? Click to see example columns</summary>
 
 **Option A — customer_status**
 ```sql
@@ -88,7 +91,7 @@ This model rolls up customer-level metrics. Your task: **add a new column** to t
         extract(year from customer_orders.first_order) as first_order_year
 ```
 
-Add a comma after the line above your addition (`customer_lifetime_value`) so the SQL is valid.
+</details>
 
 Make the edit, then rebuild just this model to confirm it works:
 

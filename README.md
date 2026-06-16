@@ -47,11 +47,11 @@ No Sigma products are used in this lab. That's intentional — we learn the buye
 ## Quick start
 
 ```bash
-# 1. Install Python with Homebrew (skip if you already have Python 3.9+)
-brew install python
+# 1. Install Python 3.12 with Homebrew (dbt does not yet support Python 3.13+)
+brew install python@3.12
 
 # 2. Set up an isolated environment and install the project's dependencies
-python3 -m venv venv
+python3.12 -m venv venv
 source venv/bin/activate
 pip install -r requirements.txt
 

@@ -109,6 +109,9 @@ git push -u origin add-customer-region
 
 ✅ You changed a model on a branch and pushed it. You did NOT touch `main` directly — that's the point.
 
+Once pushed, GitHub will show a prompt to open a pull request. You can also navigate directly to your branch in the browser:
+`https://github.com/<your-username>/se-book-club-lab/tree/add-customer-region`
+
 ---
 
 ## Part 3 — Open and review a PR (15 min)
